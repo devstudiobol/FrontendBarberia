@@ -1,0 +1,24 @@
+footer{
+    background-color:  #333;
+    height: 200px;
+}
+footer .texto{
+    text-align: center;
+    color:aliceblue ;
+    
+
+}
+footer .derecho{
+    text-align: center;
+    color:aliceblue ;
+
+}
+footer .imagenes img{
+
+    margin: 10px;
+    width: 30px;
+  
+}
+footer .imagenes{
+    text-align:center;
+}

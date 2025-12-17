@@ -1,0 +1,162 @@
+/* Configuración Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Contenedor {
+    background-color: #121212; /* Fondo más oscuro para resaltar las tarjetas */
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Título Principal */
+.titulo h2 {
+    text-align: center;
+    color: #f0f0f0;
+    font-size: clamp(30px, 5vw, 45px); /* Tamaño responsivo */
+    padding: 40px 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Contenedor de las Tarjetas */
+.filas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 5%;
+    max-width: 1300px;
+    margin: 0 auto 60px auto;
+}
+
+/* Estilo de la Tarjeta (Fila) */
+.fila {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.fila:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 0, 0, 0.2); /* Sombra roja sutil */
+    border-color: #ff0000;
+}
+
+/* Imagen del Servicio */
+.caja-imagen {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.caja-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.fila:hover .caja-imagen img {
+    transform: scale(1.1); /* Efecto zoom en la foto */
+}
+
+/* Cuerpo de la Tarjeta */
+.contenido {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.servicio-titulo {
+    color: #ffffff;
+    font-size: 22px !important;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contenido .dato p {
+    color: #bababa;
+    font-size: 14px;
+    line-height: 1.6;
+    height: 80px; /* Altura fija para alinear botones */
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* BOTÓN ROJO DE RESERVA */
+.btn-reserva-servicio {
+    background-color: #ff0000;
+    color: white !important;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-reserva-servicio:hover {
+    background-color: #b30000;
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+}
+
+/* Sección de Mapa */
+.TituloGps {
+    color: #fff;
+    font-size: 28px;
+    margin-top: 50px;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.Ubicacion {
+    margin: 20px auto 50px;
+    width: 90%;
+    max-width: 1000px;
+    border: 4px solid #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.Ubicacion img {
+    width: 100%;
+    display: block;
+    transition: filter 0.3s;
+}
+
+.Ubicacion img:hover {
+    filter: brightness(1.1);
+}
+
+/* Adaptación para Móviles */
+@media screen and (max-width: 767px) {
+    .filas-container {
+        grid-template-columns: 1fr;
+        padding: 0 10%;
+    }
+
+    .fila {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .titulo h2 {
+        font-size: 28px;
+    }
+}

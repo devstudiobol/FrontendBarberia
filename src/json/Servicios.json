@@ -1,0 +1,60 @@
+[
+    {
+        "img": "/img/servicios/server1.png",
+        "title": "Mascarilla",
+        "datos": "Mascarilla embellecedora para el cuidado facial y tratamiento del acné.",
+        "url": "Reserva tu cita"     
+    },
+    {
+        "img": "/img/servicios/server2.png",
+        "title": "Barba",
+        "datos": "Delineado con Navaja y Espuma, Corte de Barba a Máquina y Tijera",
+        "url": "Reserva tu cita" 
+
+    },
+    {
+        "img": "/img/servicios/server3.png",
+        "title": "Ceja",
+        "datos": "Delineado de con navaja y recorte de cejas.",
+        "url": "Reserva tu cita"
+        
+    },
+    {
+        "img": "/img/servicios/server4.png",
+        "title": "Corte + raya",
+        "datos": "Incluye corte de cabello más acabado de raya altamente profesional.",
+        "url": "Reserva tu cita"  
+    }
+
+    ,
+    {
+        "img": "/img/servicios/server5.png",
+        "title": "Corte Mercado",
+        "datos": "cuarto de 8x8, +sala, jacuzzi y cocina",
+        "url": "cuartosvip.com"
+    },
+    {
+        "img": "/img/servicios/server6.png",
+        "title": "Corte Fade",
+        "datos": "Incluye corte de cabello más un buen detalle de marcado altamente profesional.",
+        "url": "Reserva tu cita"      
+    }
+
+    ,
+    {
+        "img": "/img/servicios/server7.png",
+        "title": "Corte clasico",
+        "datos": "Se caracteriza por ser casi completamente simétrico y de una longitud corta o media",
+        "url": "Reserva tu cita"
+        
+    },
+    {
+        "img": "/img/servicios/server8.png",
+        "title": "Corte a Domicilio",
+        "datos": "Mascarilla embellecedora para el cuidado facial y tratamiento del acné.",
+        "url": "Reserva tu cita"     
+    }
+
+
+    
+]

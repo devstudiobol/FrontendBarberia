@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.carrusel-container {
+  max-width: 100%;
+  background-color: #000500;
+  margin: 0 auto;
+  position: relative; /* Asegura que la posición relativa esté establecida para que la capa overlay esté dentro de este contenedor */
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-height: 865px;
+  position: relative;
+}
+.image-container img {
+  width: 100%;
+  max-width: 100%;
+}
+.image {
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ajusta el comportamiento del tamaño de la imagen */
+}
+.overlay-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 3; /* Aumenta este valor a un número mayor que el z-index de .overlay */
+}
+.facha-overlay {
+  width: 648px; /* Ajusta el ancho según sea necesario */
+  height: 272.88px; /* Esto permite que la imagen se ajuste proporcionalmente */
+  margin-bottom: 10%;
+}
+.texto1 {
+  position: relative; /* Ajusta el texto para que aparezca sobre la imagen */
+  z-index: 2; /* Asegúrate de que el texto esté encima de la imagen */
+  color: #f5f5f5; /* Ajusta el color del texto para que sea visible */
+  /* Aquí puedes agregar más estilos según tus necesidades */
+  font-size: 20px;
+  width: 633px;
+  text-align: justify;
+  display: block;
+  left: 8%;
+  font-family: Arial, sans-serif;
+  
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45); /* Fondo semi-transparente, ajusta el valor alpha (último número) según lo desees */
+  z-index: 1; /* Asegura que la capa overlay esté detrás del contenido que quieras tener encima */
+}
+/* Estilos para dispositivos móviles */
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  .carrusel-container {
+
+    height: 100vh;  }
+  .image-container {
+    max-height: none; /* Elimina la altura máxima del contenedor de imágenes */
+    height: auto; /* Altura automática para adaptarse al contenido */
+  }
+  .image-container .image {
+    object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    width: 100%; /* Establece el ancho al 100% */
+    height: 100%; /* Establece la altura al 100% */
+  }
+  .overlay-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    height: 100%;
+    max-height: 97%;
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    display: flex; /* Añade un contenedor flexible para centrar verticalmente */
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    justify-content: center; /* Centra verticalmente los elementos */
+  }
+  
+  .facha-overlay {
+    position: absolute;
+    top: 4%;
+    width: 100%;
+    height: 30%;
+
+  }
+  
+  .texto1 {
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-right: 50px;
+    margin: 1% 0;
+    box-sizing: border-box;
+    text-align: justify;
+
+    
+  }
+
+  .texto1 p{
+    text-align: center;
+
+  }
+  .image-container{
+    height: 100vh;
+  }
+}

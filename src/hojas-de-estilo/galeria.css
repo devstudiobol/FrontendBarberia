@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo{
+    font-size: 32px;
+    margin: 30px;
+}
+.Contenedor{
+    background-color: #3e3e3e;
+    max-width: 100%;
+}
+
+img{
+    width: 322px;
+    height: 320;
+    margin: 6px;
+}
+
+.fila1{
+    display: block;
+    width: 100%;
+
+
+}
+.fila2{
+    display: block;
+    width: 100%;
+
+
+}
+.fila3{
+    display: block;
+    width: 100%;
+
+}
+.fila4{
+    display: block;
+    width: 100%;
+
+
+}
+.fila5{
+    display: block;
+    width: 100%;
+
+
+}
+
+.galeria img{
+    opacity: 0.4;
+}
+ .galeria img:hover{
+    opacity: 1;
+
+ }
+
+
