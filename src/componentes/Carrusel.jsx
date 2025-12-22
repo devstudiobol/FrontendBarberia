@@ -28,7 +28,8 @@ function Carrusel() {
 
   return (
     <div className="carrusel-container">
-      <div className="overlay"></div> {/* Capa overlay */}
+      <div className="overlay"></div> {/* Capa overlay oscura */}
+      
       <ImageGallery
         items={images}
         showPlayButton={false}
@@ -39,24 +40,34 @@ function Carrusel() {
         slideDuration={1000}
         useBrowserFullscreen={true}
         onSlide={handleSlide}
-        renderItem={(item, index) => (
-          <div
-            className={`image-container ${
-              index === currentIndex ? 'fade-in' : 'fade-out'
-            }`}
-          >
-            <img src={item.original} alt={item.original} className="image" style={{  width: '100%' }} />
+        renderItem={(item) => (
+          <div className="image-container">
+            <img src={item.original} alt="Barbería" className="image" style={{ width: '100%' }} />
           </div>
         )}
       />
+
       <div className="overlay-container">
         <img src={fachaImage} alt="Facha" className="facha-overlay" />
+        
         <div className="texto1">
-          Hola, Bienvenidos a “La Facheria”. Contamos con Barberos Profesionales y un buen ambiente, Te brindamos lo mejor en asesoria de imagen, Cortes de cabello, barba segun tu estilo de vida
-          <br /><br /><br /><p>
-          Estamos ubicados en: La Cruceta Block 50 Dpto. 101 - Surco
+          Hola, Bienvenidos a “La Facheria”. Contamos con Barberos Profesionales y un buen ambiente, 
+          Te brindamos lo mejor en asesoria de imagen, Cortes de cabello, barba segun tu estilo de vida
+          <br /><br />
+          <p>
+            Estamos ubicados en: La Cruceta Block 50 Dpto. 101 - Surco
           </p>
         </div>
+
+        {/* --- BOTÓN DE RESERVA --- */}
+        <a 
+          href="TU_LINK_DE_RESERVA_AQUI" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="boton-reserva"
+        >
+          RESERVAR CITA
+        </a>
       </div>
     </div>
   );
