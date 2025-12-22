@@ -61,7 +61,7 @@ function Carrusel() {
 
         {/* --- BOTÓN DE RESERVA --- */}
         <a 
-          href="TU_LINK_DE_RESERVA_AQUI" 
+          href="https://linktr.ee/BARBER_RONALD" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="boton-reserva"
